@@ -6,52 +6,75 @@
 @import "base/general";
 @import "../blocks/modules";
 
-:root{
-  font-size: 16px; 
+:root {
+  font-size: 16px;
 }
-body{
+
+body {
   font-family: 'Jost', sans-serif;
   color: $grey;
 }
-.title{
+
+.title {
   font-family: 'Cormorant', serif;
   font-size: 5rem;
-  span{
+
+  span {
     font-style: italic;
   }
 }
-.btn{
+
+.btn {
   color: $white;
   background-color: $orange;
   text-transform: uppercase;
   text-decoration: none;
   padding: 1.3rem 2.68rem;
-  border-radius: 2rem;  
+  border-radius: 2rem;
   letter-spacing: 0.075rem;
   box-shadow: 0px 10px 11.18px 1.82px rgba(207, 92, 13, 0.2);
 }
-.ml{
+
+.ml {
   margin-left: 7.6rem;
 }
-.main{
+
+.main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  &-text{
+  &-text {
     flex: 0 0 40%;
-    &_description{
+    padding-top: 200px;
+    &_description {
       font-size: 1.12rem;
       line-height: 1.51;
       margin-top: 60px;
       margin-bottom: 77px;
     }
   }
+  &-visual{
+    border: solid 1px rgba($grey, $alpha);
+    border-radius: 100%;
+    padding: 53px;
+    &__image{
+      border: solid 1px rgba($grey, $alpha);
+      border-radius: 100%;
+      padding: 21px;
+      img{
+        box-shadow: 15px 48px 42px 0px rgba($grey, $alpha);
+        border-radius: 100%;
+      }
+    }
+  }
 }
-.wrap{
+
+.wrap {
   max-width: 1440px;
   margin: 0 auto;
 }
-.section-main{
+
+.section-main {
   background-image: url(../img/bg-1.png);
   block-size: cover;
   background-repeat: no-repeat;
