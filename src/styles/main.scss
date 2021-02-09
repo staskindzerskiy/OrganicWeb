@@ -43,9 +43,11 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   &-text {
     flex: 0 0 40%;
     padding-top: 200px;
+
     &_description {
       font-size: 1.12rem;
       line-height: 1.51;
@@ -53,17 +55,75 @@ body {
       margin-bottom: 77px;
     }
   }
-  &-visual{
+
+  &-visual {
     border: solid 1px rgba($grey, $alpha);
     border-radius: 100%;
     padding: 53px;
-    &__image{
+    position: relative;
+
+    &__image {
       border: solid 1px rgba($grey, $alpha);
       border-radius: 100%;
       padding: 21px;
-      img{
+
+      img {
         box-shadow: 15px 48px 42px 0px rgba($grey, $alpha);
         border-radius: 100%;
+      }
+    }
+    &__btn{
+      background-color: transparent;
+      border: none;
+      color: rgba($grey, 0.8);
+      text-align: left;
+      position: absolute;
+      span{
+        color: rgba($grey, 1);
+        display: block;
+        margin-top: 6px;
+      }
+      &::before{
+        content: '';
+        display: block;
+        width: 11px;
+        height: 11px;
+        border-radius: 100%;
+        background-color: $grey;
+        box-shadow: 0 0 0 4px #fff, 0 0 0 5px $grey;
+        position: absolute;
+
+      }
+      &:focus{
+        outline: none;
+        &::before{
+          background-color: $orange;
+          box-shadow: 0 0 0 4px #fff, 0 0 0 5px $orange;
+        }
+      }
+    }
+    &__01{
+      left: 58px;
+      top: 45px;
+      &::before{
+        left: 91px;
+         top: 22px;
+      }
+    }
+    &__02{
+      right: 0px;
+      top: 190px;
+      &::before{
+        right: 92px;
+        top: 17px;
+      }
+    }
+    &__03{
+      right: 182px;
+      bottom: -7px;
+      &::before{
+        right: 92px;
+        top: 17px;
       }
     }
   }
@@ -79,4 +139,32 @@ body {
   block-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  padding-bottom: 100px;
+  position: relative;
+  &__image{
+    position: absolute;
+  }
+  &__tomato{
+    right: 121px;
+    bottom: 15px;
+  }
+  &__papper{
+    top: 40.2%;
+    left: 0;
+  }
+  &__avocado{
+    top: 48px;
+    right: 0;
+  }
+  &__cucumber{
+    top: 0px;
+    right: 60.5%;
+  }
+  &__beans{
+    bottom: 105px;
+    left: 0;
+  }
+  
 }
+
+
