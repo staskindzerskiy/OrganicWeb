@@ -13,6 +13,7 @@
 body {
   font-family: 'Jost', sans-serif;
   color: $grey;
+  overflow-x: hidden;
 }
 
 .title {
@@ -132,6 +133,7 @@ body {
 .wrap {
   max-width: 1440px;
   margin: 0 auto;
+  padding: 0 15px;;
 }
 
 .section-main {
@@ -139,14 +141,14 @@ body {
   block-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  padding-bottom: 100px;
   position: relative;
+  padding-bottom: 208px;
   &__image{
     position: absolute;
   }
   &__tomato{
     right: 121px;
-    bottom: 15px;
+    bottom: 140px;
   }
   &__papper{
     top: 40.2%;
@@ -161,10 +163,23 @@ body {
     right: 60.5%;
   }
   &__beans{
-    bottom: 105px;
+    bottom: 175px;
     left: 0;
   }
   
+}
+.section-stock{
+  background-image: url(../img/bg-2.png);
+  block-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  &__text{
+    max-width: 690px;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin-top: 3.75rem;
+  }
 }
 
 
