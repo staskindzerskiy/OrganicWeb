@@ -34,6 +34,12 @@ body {
   border-radius: 2rem;
   letter-spacing: 0.075rem;
   box-shadow: 0px 10px 11.18px 1.82px rgba(207, 92, 13, 0.2);
+  transition: .2s;
+
+  &:hover {
+    background-color: $orangeHover;
+    transition: .2s ease;
+  }
 }
 
 .ml {
@@ -73,18 +79,21 @@ body {
         border-radius: 100%;
       }
     }
-    &__btn{
+
+    &__btn {
       background-color: transparent;
       border: none;
       color: rgba($grey, 0.8);
       text-align: left;
       position: absolute;
-      span{
+
+      span {
         color: rgba($grey, 1);
         display: block;
         margin-top: 6px;
       }
-      &::before{
+
+      &::before {
         content: '';
         display: block;
         width: 11px;
@@ -95,34 +104,42 @@ body {
         position: absolute;
 
       }
-      &:focus{
+
+      &:focus {
         outline: none;
-        &::before{
+
+        &::before {
           background-color: $orange;
           box-shadow: 0 0 0 4px #fff, 0 0 0 5px $orange;
         }
       }
     }
-    &__01{
+
+    &__01 {
       left: 58px;
       top: 45px;
-      &::before{
+
+      &::before {
         left: 91px;
-         top: 22px;
+        top: 22px;
       }
     }
-    &__02{
+
+    &__02 {
       right: 0px;
       top: 190px;
-      &::before{
+
+      &::before {
         right: 92px;
         top: 17px;
       }
     }
-    &__03{
+
+    &__03 {
       right: 182px;
       bottom: -7px;
-      &::before{
+
+      &::before {
         right: 92px;
         top: 17px;
       }
@@ -133,7 +150,8 @@ body {
 .wrap {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 15px;;
+  padding: 0 15px;
+  ;
 }
 
 .section-main {
@@ -143,38 +161,45 @@ body {
   background-position: center center;
   position: relative;
   padding-bottom: 208px;
-  &__image{
+
+  &__image {
     position: absolute;
   }
-  &__tomato{
+
+  &__tomato {
     right: 121px;
     bottom: 140px;
   }
-  &__papper{
+
+  &__papper {
     top: 40.2%;
     left: 0;
   }
-  &__avocado{
+
+  &__avocado {
     top: 48px;
     right: 0;
   }
-  &__cucumber{
+
+  &__cucumber {
     top: 0px;
     right: 60.5%;
   }
-  &__beans{
+
+  &__beans {
     bottom: 175px;
     left: 0;
   }
-  
+
 }
-.section-stock{
+
+.section-stock {
   background-image: url(../img/bg-2.png);
   block-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 
-  &__text{
+  &__text {
     max-width: 690px;
     font-size: 1.5rem;
     line-height: 1.5;
@@ -182,4 +207,65 @@ body {
   }
 }
 
+.slider {
+  display: flex;
+  justify-content: space-between;
+  
+  &-item {
+    border: solid 1px rgba($grey, $alpha);
+    border-radius: 20px;
+    flex: 0 0 32%;
+    min-height: 520px;
+    padding: 2.75rem 2.25rem;
+    position: relative;
+    box-sizing: border-box ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  &-milk{
+    background-image: url(../img/stock/milk.png);
+  }
+  &-noodles{
+    background-image: url(../img/stock/pasta-noodles.png);
+  }
+  &-meet{
+    background-image: url(../img/stock/meet.png);
+  }
+  &-text{
+    position: absolute;
+    bottom: 2.75rem;
+    left: 2.25rem;
+    max-width: 58 %;
+    &-title{
+       font-size: 1.8rem;
+       font-family: 'Cormorant', serif;
+       margin-bottom: 26px;
+    }
+    &__discription{
+      color: rgba($grey, 0.7);
+      margin-bottom: 41px;
+      line-height: 1.5;
+    }
+    &__link{
+      color: rgba($grey, 0.8);
+      text-transform: uppercase; 
+      text-decoration: none;
+      font-weight: 500;     
+      letter-spacing: 0.75rem;
+    }
+  }
+}
 
+
+// <div class="slider">
+// <div class="slider-item slider-milk">
+//     <div class="slider-text">
+//         <h3 class="slider-text__title">Молочные продукты</h3>
+//         <p class="slider-text__discription">
+//             В наши дни появилась мода на здоровое питание, поэтому на рынке питания разработали органическое молоко. Органическое молоко является продуктом органического животноводства
+//         </p>
+//         <a href="" class="slider-text__link">подробнее</a>
+//     </div>
+// </div>
+// </div>
