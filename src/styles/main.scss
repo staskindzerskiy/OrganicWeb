@@ -160,7 +160,7 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   position: relative;
-  padding-bottom: 208px;
+  padding-bottom: 186px;
 
   &__image {
     position: absolute;
@@ -236,7 +236,7 @@ body {
     position: absolute;
     bottom: 2.75rem;
     left: 2.25rem;
-    max-width: 58 %;
+    max-width: 58%;
     &-title{
        font-size: 1.8rem;
        font-family: 'Cormorant', serif;
@@ -257,15 +257,3 @@ body {
   }
 }
 
-
-// <div class="slider">
-// <div class="slider-item slider-milk">
-//     <div class="slider-text">
-//         <h3 class="slider-text__title">Молочные продукты</h3>
-//         <p class="slider-text__discription">
-//             В наши дни появилась мода на здоровое питание, поэтому на рынке питания разработали органическое молоко. Органическое молоко является продуктом органического животноводства
-//         </p>
-//         <a href="" class="slider-text__link">подробнее</a>
-//     </div>
-// </div>
-// </div>
