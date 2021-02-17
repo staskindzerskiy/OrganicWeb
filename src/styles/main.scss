@@ -209,14 +209,17 @@ body {
 }
 
 .slider {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 95px;
-  
+  margin-top: 92px;
+  &-child{
+    padding: 5px 10px;
+    box-sizing: border-box;
+    &:focus{
+      outline: none;
+    }
+  }
   &-item {
     border: solid 1px rgba($grey, $alpha);
     border-radius: 20px;
-    flex: 0 0 32%;
     min-height: 520px;
     padding: 2.75rem 2.25rem;
     position: relative;
@@ -226,7 +229,6 @@ body {
     box-sizing: border-box ;
     box-shadow: 0 0 0 2px rgba($grey, 0);
     transition: .3s ease;
-    overflow:hidden;
     &::before{
       content: '';
       position: absolute;
@@ -242,7 +244,7 @@ body {
     }
       &:hover::before{
         background-color: rgba($white, 0.55);
-        box-shadow: 0 0 0 2px rgba($grey, $alpha);
+        box-shadow: 0 0 0 3px rgba($grey, $alpha);
       }
       &:hover{
         .slider-text{
@@ -266,7 +268,7 @@ body {
     left: 2.25rem;
     max-width: 58%;
     transition: 0.3s ease;
-    transform: translate(0, 243px);
+    transform: translate(0, 245px);
     &__title{
        font-size: 1.8rem;
        font-family: 'Cormorant', serif;
@@ -290,6 +292,9 @@ body {
         opacity: 1;
         padding-left: 45px;
       }
+      &:focus{
+        outline: none;
+      }
       &::before{
         content: '';
         position: absolute;
@@ -304,6 +309,33 @@ body {
   }
 }
 
-main{
-  margin: 100px auto 0; width: 1200px; border: solid 1px;
+.slick-prev,
+.slick-next{
+  position: absolute;
+  top: -63px;
+  background-color: transparent;
+  border: none;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  text-indent: -9999px;
+  background-size: contain;
+  display: block;
+  width: 10px;
+  height: 18px;
+  opacity: 0.4;
+  transition: 0.2s ease;
+  &:hover{
+    opacity: 1 ;
+  }
+  &:focus{
+    outline: none;
+  }
+}
+.slick-prev{
+  background-image: url(../img/arrow-prev.svg);
+  right: 80px;
+}
+.slick-next{
+  right: 0;
+  background-image: url(../img/arrow-next.svg);
 }
