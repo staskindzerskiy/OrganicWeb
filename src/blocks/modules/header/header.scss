@@ -5,6 +5,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media (max-width: 1440px){
+    max-width: 1140px;
+  }
 
   &-item {
     display: flex;
@@ -24,6 +27,7 @@
       transition: .9s;
     }
   }
+  
 }
 
 .header-cart {
@@ -31,7 +35,9 @@
   width: 2.5rem;
   height: 2.5rem;
   margin-left: 82px;
-
+  @media (max-width: 1440px){
+    margin-left: 40px;
+  }
   &__button {
     width: 2.5rem;
     height: 2.5rem;
@@ -57,10 +63,15 @@
 .logo {
   background-image: url(../../../img/logo.svg);
   background-repeat: no-repeat;
+  background-size: containnav;
   display: block;
   width: 120px;
   height: 32px;
   margin-right: 120px;
+  @media (max-width: 1440px){
+    margin-right: 50px;
+   
+  }
 }
 
 .nav {
@@ -70,6 +81,9 @@
 
   &-item {
     margin-right: 48px;
+    @media (max-width: 1440px){
+      margin-right: 30px;
+    }
   }
 
   &-link {
@@ -79,9 +93,7 @@
 
     &:hover {
       color: $orange;
-      transition: .9s;
+      transition: .2s;
     }
   }
 }
-
-// yarn run build

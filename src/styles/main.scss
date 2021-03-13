@@ -58,6 +58,9 @@ body {
     flex: 0 0 40%;
     padding-top: 200px;
 
+    @media (max-width: 1440px){
+      flex: 0 0 45%;
+    }
     &_description {
       font-size: 1.12rem;
       line-height: 1.51;
@@ -76,10 +79,12 @@ body {
       border: solid 1px rgba($grey, $alpha);
       border-radius: 100%;
       padding: 21px;
-
       img {
         box-shadow: 15px 48px 42px 0px rgba($grey, $alpha);
         border-radius: 100%;
+        @media (max-width: 1440px){
+          width: 427px;
+        }
       }
     }
 
@@ -121,6 +126,10 @@ body {
     &__01 {
       left: 58px;
       top: 45px;
+      @media (max-width:1440px) {
+        left: 79px;
+        top: 56px;
+      }
 
       &::before {
         left: 91px;
@@ -131,7 +140,9 @@ body {
     &__02 {
       right: 0px;
       top: 190px;
-
+      @media (max-width:1440px) {
+        right: -35px;
+      }
       &::before {
         right: 92px;
         top: 17px;
@@ -141,7 +152,9 @@ body {
     &__03 {
       right: 182px;
       bottom: -7px;
-
+      @media (max-width:1440px) {
+       bottom: -22px;
+      }
       &::before {
         right: 92px;
         top: 17px;
@@ -154,7 +167,9 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 15px;
-  ;
+  @media (max-width: 1440px){
+    max-width: 1140px;
+  }
 }
 
 .section-main {
@@ -172,16 +187,28 @@ body {
   &__tomato {
     right: 121px;
     bottom: 140px;
+    @media (max-width: 1700px){
+      right: 10px;      
+    }
   }
 
   &__papper {
     top: 40.2%;
     left: 0;
+    @media (max-width: 1700px){
+      top: 60%;
+      left: -1px;
+    }
   }
 
   &__avocado {
     top: 48px;
     right: 0;
+    @media (max-width: 1700px){
+      top: 100px;
+      right: -61px;
+      width: 129px;
+    }
   }
 
   &__cucumber {
@@ -192,6 +219,9 @@ body {
   &__beans {
     bottom: 175px;
     left: 0;
+    @media (max-width: 1650px){
+      display: none;
+    }
   }
 
 }
@@ -236,7 +266,7 @@ body {
     box-shadow: 0 0 0 2px rgba($grey, 0);
     transition: .3s ease;
     overflow: hidden;
-
+    
     &:hover {
       box-shadow: 0 0 0 2px rgba($grey, $alpha);
     }
@@ -292,6 +322,10 @@ body {
     max-width: 58%;
     transition: 0.3s ease;
     transform: translate(0, 245px);
+    @media (max-width:1440px) {
+      transform: translate(0, 255px);
+      max-width: 80%;
+    }
 
     &__title {
       font-size: 1.8rem;
@@ -341,7 +375,7 @@ body {
     position: relative;
     overflow: hidden;
     width: 100%;
-    height: 314px;
+    min-height: 314px;
     margin-bottom: 40px;
 
     &__image {
@@ -350,6 +384,7 @@ body {
       top: 50%;
       transform: translate(-50%, -50%);
       object-fit: cover;
+      background: red;
     }
   }
 }
@@ -368,6 +403,9 @@ body {
     font-size: 1.875rem;
     font-family: 'Cormorant', serif;
     margin-bottom: 26px;
+    @media (max-width:1440px){
+      min-height: 68px;
+    }
   }
 
   &__discription {
@@ -375,7 +413,7 @@ body {
     color: rgba($grey, 0.7);
     line-height: 1.5;
     margin-bottom: 0;
-    min-height: 52px;
+    min-height: 88px;
     min-width: 95%;
   }
 
@@ -397,6 +435,9 @@ body {
     cursor: pointer;
     border: none;
     outline: none;
+    @media (max-width:1440px) {
+      padding: 1rem 1.8rem;
+    }
   }
 }
 
@@ -419,12 +460,19 @@ body {
     &:hover {
       opacity: 1;
     }
+    @media (max-width:1440px){
+      width: 2.5rem;
+      height: 2.5rem;
+    }
   }
 
   &__number {
     border: none;
     width: 40px;
     text-align: center;
+    @media (max-width:1440px){
+      width: 30px;
+    }
   }
 
   &__minus {
@@ -489,6 +537,9 @@ body {
 
   &-item {
     flex: 0 0 49%;
+    @media (max-width:1440px) {
+      flex: 0 0 50%;
+    }
   }
 
   &__text {
@@ -510,7 +561,10 @@ body {
   &__item {
     text-align: center;
     margin-left: 85px;
-
+    
+    @media (max-width:1440px) {
+      margin-left: 55px;
+    }
     span {
       display: block;
       width: 87px;
@@ -605,7 +659,7 @@ flex-wrap: wrap;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    min-height: 515px;
+    min-height: 518px;
     position: relative;
     padding: 2rem 1.9rem;
     box-sizing: border-box;
@@ -631,8 +685,8 @@ flex-wrap: wrap;
     overflow: hidden;
     width: 100%;
     max-height: 204px;
+    min-height: 200px;
     margin-bottom: 14px;
-    
     &__iamge {
       position: absolute;
       left: 50%;
@@ -644,19 +698,29 @@ flex-wrap: wrap;
     }
   }
 }
+.slider-thumb__bouttle{
+  max-height: 204px;
+}
 .catalog-info {
   &__title {
     font-size: 1.875rem;
     font-family: 'Cormorant', serif;
     margin-bottom: 17px;
+    @media (max-width:1440px){
+      font-size: 1.45rem;
+    }
   }
 
   &__discription {
     color: rgba($grey, 0.7);
     line-height: 1.5;
     margin-bottom: 0;
-    min-height: 52px;
+    min-height: 72px;
     min-width: 95%;
+    @media (max-width:1440px){
+      font-size: 1rem;
+      min-height: 112px;
+    }
   }
 
   &__price {
@@ -678,6 +742,11 @@ flex-wrap: wrap;
     cursor: pointer;
     border: none;
     outline: none;
+    @media (max-width:1440px){
+     padding: 0.87rem 1.6rem;
+     font-size: 0.7rem;
+     margin-left: 10px;
+    }
   }
 }
 
@@ -685,6 +754,7 @@ flex-wrap: wrap;
   display: flex;
   align-items: center;
   font-size: 1.5rem;
+  
 
   &__minus,
   &__plus {
@@ -696,6 +766,10 @@ flex-wrap: wrap;
     cursor: pointer;
     opacity: 0.4;
     transition: .2s ease;
+    @media (max-width:1440px){
+      width: 2.5rem;
+      height: 2.5rem;
+    }
 
     &:hover {
       opacity: 1;
@@ -811,12 +885,17 @@ flex-wrap: wrap;
     width: 87px;
   }
 }
-
+.section-form{
+  background-image: url(../img/bg-7.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 .box-form{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 156px;
+  padding-bottom: 160px;
   &-item{
     flex: 0 0 39%;
     &:last-child{
@@ -839,7 +918,6 @@ flex-wrap: wrap;
        display: block;
        width: 29px;
        height: 25px;
-      // background-repeat: no-repeat;
       position: absolute;
       left: 0;
       top: calc(50% -12.5px);

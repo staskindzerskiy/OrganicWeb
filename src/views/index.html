@@ -11,7 +11,7 @@
 		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
 	<link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
-	<link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+	<link rel="icon" sizes="32x32" href="img/favicons/favicon.png" type="image/png">
 	<link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
 	<link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
@@ -189,7 +189,7 @@
 				<div class="slider-child">
 					<div class="slider-item">
 						<div class="slider-thumb">
-							<img src="../img/stock/bouttle.png" class="slider-thumb__iamge" alt="milk">
+							<img src="../img/stock/milk.png" class="slider-thumb__iamge" alt="milk">
 						</div>
 						<div class="slider-info">
 							<h3 class="slider-info__title">Молоко топленое</h3>
@@ -227,7 +227,7 @@
 					</div>
 				</div>
 				<div class="slider-child">
-					<div class="slider-item">
+					<div class="slider-item slider-item__egg">
 						<div class="slider-thumb">
 							<img src="../img/stock/chicken.png" class="slider-thumb__iamge" alt="egg">
 						</div>
@@ -250,7 +250,7 @@
 				<div class="slider-child">
 					<div class="slider-item">
 						<div class="slider-thumb">
-							<img src="../img/stock/bouttle.png" class="slider-thumb__iamge" alt="milk">
+							<img src="../img/stock/milk.png" class="slider-thumb__iamge" alt="milk">
 						</div>
 						<div class="slider-info">
 							<h3 class="slider-info__title">Молоко топленое</h3>
@@ -290,7 +290,7 @@
 				<div class="slider-child">
 					<div class="slider-item">
 						<div class="slider-thumb">
-							<img src="../img/stock/chicken.png" class="slider-thumb__iamge" alt="egg">
+							<img src="../img/stock/chicken.png" class="slider-thumb__iamge slider-thumb__egg" alt="egg">
 						</div>
 						<div class="slider-info">
 							<h3 class="slider-info__title">Куриное филе Оссобуко</h3>
@@ -326,7 +326,7 @@
 			<div class="catalog">
 				<div class="catalog-item">
 					<div class="catalog-thumb">
-						<img src="../img/stock/bouttle.png" class="slider-thumb__iamge" alt="milk">
+						<img src="../img/stock/bottle.png" class="slider-thumb__iamge slider-thumb__bouttle" alt="milk">
 					</div>
 					<div class="catalog-info">
 						<h3 class="catalog-info__title">Молоко топленое</h3>
@@ -544,6 +544,7 @@
 		// slider
 		$('.slider').slick({
 			autoplay: true,
+			infinite:false,
 			dots: false,
 			infinite: false,
 			arrows: true,
